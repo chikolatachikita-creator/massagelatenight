@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Therapeutic Massage London | Latina Tantric Therapeutic Experience</title>
+  <meta name="description" content="Latina Tantric Therapeutic Experience in London. Available 5pm–5am. Book exclusively via WhatsApp. Serving Seven Sisters, Harlow, Ilford and Leytonstone." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary:#1C1C1C;
+      --accent:#D4A017;
+      --accent-light:#E8B84D;
+      --light:#FAF7F0;
+      --neutral:#F5F0E8;
+      --text:#2C2C2C;
+      --muted:#666;
+      --wa:#25D366;
+      --wa-dark:#20BA5A;
+      --glass:rgba(255,255,255,.14);
+      --glass-border:rgba(255,255,255,.25);
+      --shadow:0 16px 45px rgba(0,0,0,.14);
+      --radius:22px;
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family:'Inter', system-ui, sans-serif;
+      font-size:16px;
+      line-height:1.65;
+      color:var(--text);
+      background:linear-gradient(135deg,var(--light),var(--neutral));
+      min-height:100vh;
+      animation:pageFade .6s ease;
+    }
+
+    @keyframes pageFade { from{opacity:0} to{opacity:1} }
+
+    a { color:inherit; }
+    .container { width:100%; max-width:1120px; margin:0 auto; padding:0 18px; }
+    .serif, h1, h2, h3 { font-family:'Playfair Display', Georgia, serif; }
+    h1 { font-size:clamp(2.15rem,5vw,4rem); line-height:1.05; letter-spacing:-.03em; }
+    h2 { font-size:clamp(1.6rem,3.4vw,2.55rem); line-height:1.15; color:var(--primary); }
+    h3 { font-size:1.25rem; line-height:1.2; }
+
+    /* Glass navigation */
+    header {
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:1000;
+      background:rgba(20,20,20,.34);
+      border-bottom:1px solid rgba(255,255,255,.1);
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      transition:all .4s ease;
+    }
+
+    header.scrolled {
+      background:rgba(20,20,20,.62);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .nav {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:.85rem 0;
+    }
+
+    .brand {
+      color:white;
+      text-decoration:none;
+      font-weight:700;
+      font-family:'Playfair Display', Georgia, serif;
+      font-size:clamp(1.1rem,2vw,1.55rem);
+      line-height:1.1;
+      white-space:nowrap;
+    }
+
+    .nav-links {
+      display:flex;
+      gap:1.45rem;
+      align-items:center;
+    }
+
+    .nav-links a {
+      color:rgba(255,255,255,.86);
+      text-decoration:none;
+      font-size:.95rem;
+      font-weight:500;
+    }
+
+    .nav-links a:hover { color:var(--accent-light); }
+
+    .menu-btn {
+      display:none;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(255,255,255,.1);
+      color:white;
+      font-size:1.2rem;
+      cursor:pointer;
+    }
+
+    .mobile-menu {
+      display:none;
+      padding:12px;
+      margin:0 0 12px;
+      border-radius:18px;
+      background:rgba(20,20,20,.5);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+    }
+
+    .mobile-menu a {
+      display:block;
+      padding:11px 12px;
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:600;
+    }
+
+    .mobile-menu a:hover { background:rgba(255,255,255,.08); }
+
+    /* Hero */
+    .hero {
+      position:relative;
+      min-height:85vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      overflow:hidden;
+      padding:110px 20px 70px;
+      background:var(--primary);
+    }
+
+    .hero::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 30% 40%, rgba(0,0,0,.20), transparent 60%),
+        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.76)),
+        url('hero.jpg') center/cover no-repeat;
+      animation:slowZoom 20s ease-in-out infinite alternate;
+      will-change:transform;
+    }
+
+    @keyframes slowZoom {
+      0% { transform:scale(1.02); }
+      100% { transform:scale(1.08); }
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:2;
+      width:min(100%,820px);
+      margin:0 auto;
+      padding:clamp(1.2rem,4vw,2rem);
+      background:rgba(20,20,20,.26);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:26px;
+      box-shadow:0 18px 55px rgba(0,0,0,.26);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      opacity:0;
+      transform:translateY(30px);
+      animation:heroFade 1.2s ease-out forwards .4s;
+    }
+
+    @keyframes heroFade { to { opacity:1; transform:translateY(0); } }
+
+    .hero-subtitle {
+      margin-top:1rem;
+      font-size:clamp(1rem,2.2vw,1.2rem);
+      opacity:.92;
+      font-weight:500;
+    }
+
+    .hero-note {
+      margin-top:.75rem;
+      opacity:.86;
+      font-size:.95rem;
+    }
+
+    .hero-actions {
+      display:flex;
+      justify-content:center;
+      gap:.85rem;
+      flex-wrap:wrap;
+      margin-top:1.5rem;
+    }
+
+    .btn, .cta-button {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.55rem;
+      min-height:48px;
+      padding:14px 24px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.28);
+      text-decoration:none;
+      font-weight:700;
+      font-size:.98rem;
+      line-height:1.2;
+      transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+      box-shadow:0 10px 28px rgba(0,0,0,.14);
+    }
+
+    .btn:hover, .cta-button:hover {
+      transform:translateY(-2px) scale(1.02);
+      box-shadow:0 18px 40px rgba(0,0,0,.25);
+    }
+
+    .btn-wa { background:var(--wa); color:white; }
+    .btn-wa:hover { background:var(--wa-dark); }
+    .btn-gold { background:rgba(212,160,23,.94); color:#1c1c1c; }
+    .btn-ghost { background:rgba(255,255,255,.1); color:white; border-color:rgba(255,255,255,.35); }
+    .btn-ghost:hover { background:rgba(255,255,255,.95); color:var(--primary); }
+
+    .urgency-bar {
+      background:linear-gradient(90deg,var(--accent),var(--accent-light));
+      color:var(--primary);
+      text-align:center;
+      padding:12px 16px;
+      font-weight:700;
+      font-size:.95rem;
+      letter-spacing:.01em;
+    }
+
+    .section { padding:clamp(56px,8vw,96px) 20px; }
+    .center { text-align:center; }
+    .muted { color:var(--muted); }
+    .lead {
+      font-size:clamp(.98rem,2vw,1.12rem);
+      color:var(--muted);
+      max-width:760px;
+      margin:0 auto;
+    }
+
+    .glass, .area-card, .feature-card, .testimonial-card, .contact-panel {
+      background:var(--glass);
+      border:1px solid var(--glass-border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+    }
+
+    .feature-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem;
+      margin-top:2rem;
+    }
+
+    .feature-card {
+      padding:1.25rem;
+      text-align:center;
+    }
+
+    .feature-card p { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+
+    .areas-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1rem;
+      margin-top:2rem;
+    }
+
+    .area-card {
+      overflow:hidden;
+      background:rgba(255,255,255,.72);
+    }
+
+    .area-head {
+      padding:1.15rem;
+      background:linear-gradient(180deg,rgba(28,28,28,.96),rgba(28,28,28,.9));
+      color:white;
+    }
+
+    .area-head p { opacity:.82; margin-top:.25rem; font-size:.92rem; }
+    .area-body { padding:1.15rem; color:var(--muted); font-size:.95rem; }
+
+    .area-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+      align-items:center;
+      margin-top:1rem;
+    }
+
+    .tel {
+      color:#0b3b2a;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    details {
+      margin-top:1rem;
+      padding:.75rem .85rem;
+      border-radius:16px;
+      background:rgba(255,255,255,.55);
+      border:1px solid rgba(0,0,0,.06);
+    }
+
+    summary {
+      cursor:pointer;
+      font-weight:800;
+      color:#333;
+      list-style:none;
+    }
+
+    summary::-webkit-details-marker { display:none; }
+
+    .chips {
+      display:flex;
+      flex-wrap:wrap;
+      gap:.45rem;
+      margin-top:.65rem;
+    }
+
+    .chip {
+      padding:.38rem .65rem;
+      border-radius:999px;
+      background:rgba(212,160,23,.12);
+      border:1px solid rgba(212,160,23,.22);
+      color:#6b4a12;
+      font-size:.86rem;
+      white-space:nowrap;
+    }
+
+    .testimonials {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem;
+      margin-top:2rem;
+    }
+
+    .testimonial-card { padding:1.25rem; }
+    .testimonial-card p { color:#333; font-size:.96rem; }
+    .testimonial-card strong { display:block; margin-top:.75rem; }
+
+    .contact-section {
+      background:linear-gradient(135deg,rgba(28,28,28,.98),rgba(10,10,10,.98));
+      color:white;
+    }
+
+    .contact-section h2 { color:white; }
+
+    .contact-panel {
+      max-width:900px;
+      margin:0 auto;
+      padding:clamp(1.3rem,4vw,2rem);
+      background:rgba(20,20,20,.34);
+      border-color:rgba(255,255,255,.14);
+    }
+
+    .contact-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:.75rem;
+      margin-top:1.5rem;
+    }
+
+    .footer-note {
+      text-align:center;
+      margin-top:1.2rem;
+      opacity:.78;
+      font-size:.92rem;
+    }
+
+    .whatsapp-float {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      z-index:999;
+    }
+
+    .whatsapp-float a {
+      width:62px;
+      height:62px;
+      border-radius:999px;
+      background:rgba(37,211,102,.9);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-decoration:none;
+      font-size:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.22);
+      transition:all .25s ease;
+    }
+
+    .whatsapp-float a:hover {
+      transform:scale(1.08);
+      box-shadow:0 18px 42px rgba(0,0,0,.3);
+    }
+
+    .reveal {
+      opacity:0;
+      transform:translateY(18px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media (max-width: 860px) {
+      .nav-links { display:none; }
+      .menu-btn { display:inline-flex; align-items:center; justify-content:center; }
+      .nav .desktop-wa { display:none; }
+
+      .feature-grid, .areas-grid, .testimonials, .contact-grid {
+        grid-template-columns:1fr;
+      }
+
+      .hero {
+        min-height:82vh;
+        padding:92px 16px 54px;
+      }
+
+      .hero-actions { flex-direction:column; }
+      .btn, .cta-button { width:100%; padding:14px 18px; }
+      .section { padding:52px 16px; }
+      .urgency-bar { font-size:.88rem; padding:10px 12px; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding:0 14px; }
+      .hero { min-height:78vh; }
+      .whatsapp-float { right:14px; bottom:14px; }
+      .whatsapp-float a { width:56px; height:56px; font-size:25px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#top">Therapeutic Massage London</a>
+
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#areas">Areas</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="btn btn-wa desktop-wa" href="https://wa.me/447818099918" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#experience">Experience</a>
+        <a href="#areas">Areas</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-wa" href="https://wa.me/447818099918" target="_blank" rel="noopener" style="margin-top:.5rem;">💬 WhatsApp Seven Sisters</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Latina Tantric<br>Therapeutic Experience</h1>
+        <p class="hero-subtitle">Professional therapeutic massage available <strong>5pm–5am</strong> across London.</p>
+        <p class="hero-note">Booking exclusively via WhatsApp. Message for pricing and real-time availability.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-wa" href="https://wa.me/447818099918" target="_blank" rel="noopener">💬 Book via WhatsApp</a>
+          <a class="btn btn-ghost scroll-btn" href="#contact">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="urgency-bar">Available tonight from 5pm • Limited slots remaining</div>
+
+    <section id="experience" class="section">
+      <div class="container center">
+        <div class="glass reveal" style="padding:clamp(1.3rem,4vw,2rem);">
+          <h2>The Signature Experience</h2>
+          <p class="lead" style="margin-top:.9rem;">
+            The <strong>Latina Tantric Therapeutic Experience</strong> blends intentional touch with deep therapeutic technique to release tension,
+            restore energy flow and create profound relaxation in a private, luxurious setting.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Relaxation</h3>
+              <p>A calm, premium atmosphere with warm, soothing care.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Therapeutic</h3>
+              <p>Focused bodywork to ease tension and help you feel renewed.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Discreet</h3>
+              <p>Strictly professional and confidential. Discretion guaranteed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section">
+      <div class="container">
+        <div class="center reveal">
+          <h2>Areas We Serve</h2>
+          <p class="lead" style="margin-top:.8rem;">Choose your nearest area for the fastest response. Tap WhatsApp to message directly.</p>
+        </div>
+
+        <div class="areas-grid">
+          <article class="area-card reveal">
+            <div class="area-head"><h3>Seven Sisters</h3><p>North London • N15 / N4</p></div>
+            <div class="area-body">
+              <p>Convenient for Tottenham, Stamford Hill and surrounding areas.</p>
+              <div class="area-actions">
+                <a class="tel" href="tel:07818099918">📞 07818 099918</a>
+                <a class="btn btn-wa" href="https://wa.me/447818099918" target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+              <details>
+                <summary>Surrounding neighbourhoods</summary>
+                <div class="chips">
+                  <span class="chip">South Tottenham</span><span class="chip">Tottenham Green</span><span class="chip">Page Green</span>
+                  <span class="chip">West Green</span><span class="chip">St Ann’s</span><span class="chip">Tottenham Hale</span>
+                  <span class="chip">Bruce Grove</span><span class="chip">Harringay</span><span class="chip">Stamford Hill</span>
+                  <span class="chip">Manor House</span><span class="chip">Turnpike Lane</span>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="area-card reveal">
+            <div class="area-head"><h3>Harlow</h3><p>Essex • CM18</p></div>
+            <div class="area-body">
+              <p>Serving Harlow and nearby Essex communities.</p>
+              <div class="area-actions">
+                <a class="tel" href="tel:07771999982">📞 07771 999982</a>
+                <a class="btn btn-wa" href="https://wa.me/447771999982" target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+              <details>
+                <summary>Surrounding neighbourhoods</summary>
+                <div class="chips">
+                  <span class="chip">Old Harlow</span><span class="chip">Town Centre</span><span class="chip">Church Langley</span>
+                  <span class="chip">Newhall</span><span class="chip">Mark Hall</span><span class="chip">Netteswell</span>
+                  <span class="chip">Bush Fair</span><span class="chip">Great Parndon</span><span class="chip">Little Parndon</span>
+                  <span class="chip">Sumners</span><span class="chip">Katherines</span><span class="chip">Staple Tye</span>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="area-card reveal">
+            <div class="area-head"><h3>Ilford</h3><p>East London • IG1 / IG2</p></div>
+            <div class="area-body">
+              <p>Professional sessions in and around Redbridge.</p>
+              <div class="area-actions">
+                <a class="tel" href="tel:07788809080">📞 07788 809080</a>
+                <a class="btn btn-wa" href="https://wa.me/447788809080" target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+              <details>
+                <summary>Surrounding neighbourhoods</summary>
+                <div class="chips">
+                  <span class="chip">Cranbrook</span><span class="chip">Valentines</span><span class="chip">Loxford</span>
+                  <span class="chip">Clementswood</span><span class="chip">Gants Hill</span><span class="chip">Newbury Park</span>
+                  <span class="chip">Seven Kings</span><span class="chip">Goodmayes</span><span class="chip">Barkingside</span>
+                  <span class="chip">Aldborough Hatch</span><span class="chip">Fairlop</span><span class="chip">Hainault</span>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="area-card reveal">
+            <div class="area-head"><h3>Leytonstone</h3><p>East London • E11</p></div>
+            <div class="area-body">
+              <p>Serving Leytonstone, Wanstead and nearby areas.</p>
+              <div class="area-actions">
+                <a class="tel" href="tel:07930558234">📞 07930 558234</a>
+                <a class="btn btn-wa" href="https://wa.me/447930558234" target="_blank" rel="noopener">💬 WhatsApp</a>
+              </div>
+              <details>
+                <summary>Surrounding neighbourhoods</summary>
+                <div class="chips">
+                  <span class="chip">Upper Leytonstone</span><span class="chip">Leytonstone Village</span><span class="chip">Bushwood</span>
+                  <span class="chip">Ferndale</span><span class="chip">Cathall</span><span class="chip">Cann Hall</span>
+                  <span class="chip">Grove Green</span><span class="chip">Harrow Green</span><span class="chip">Wanstead Flats</span>
+                  <span class="chip">Whipps Cross</span><span class="chip">Temple Mills</span>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="center reveal">
+          <h2>Why Clients Choose Us</h2>
+          <p class="lead" style="margin-top:.8rem;">Premium, calm and professional — with late-night availability.</p>
+        </div>
+
+        <div class="testimonials">
+          <div class="testimonial-card reveal"><p><em>“Booked last minute and it was the best massage I’ve had in years.”</em></p><strong>— Client, Leytonstone</strong></div>
+          <div class="testimonial-card reveal"><p><em>“Professional, clean and deeply relaxing. Highly recommend.”</em></p><strong>— Client, Ilford</strong></div>
+          <div class="testimonial-card reveal"><p><em>“Worth travelling for. Felt renewed afterwards.”</em></p><strong>— Client, Harlow</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-panel reveal center">
+          <h2>Ready to Relax?</h2>
+          <p class="lead" style="margin-top:.8rem; color:rgba(255,255,255,.82);">Message your local WhatsApp line for instant availability and pricing.</p>
+
+          <div class="contact-grid">
+            <a class="btn btn-wa" href="https://wa.me/447818099918" target="_blank" rel="noopener">💬 Seven Sisters — 07818 099918</a>
+            <a class="btn btn-wa" href="https://wa.me/447771999982" target="_blank" rel="noopener">💬 Harlow — 07771 999982</a>
+            <a class="btn btn-wa" href="https://wa.me/447788809080" target="_blank" rel="noopener">💬 Ilford — 07788 809080</a>
+            <a class="btn btn-wa" href="https://wa.me/447930558234" target="_blank" rel="noopener">💬 Leytonstone — 07930 558234</a>
+          </div>
+
+          <p class="footer-note">Open daily: <strong>5pm–5am</strong>. Discretion guaranteed.</p>
+        </div>
+
+        <p class="footer-note">© 2026 Therapeutic Massage London. All rights reserved.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/447818099918" target="_blank" rel="noopener" aria-label="Open WhatsApp booking">💬</a>
+  </div>
+
+  <script>
+    const header = document.querySelector('header');
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        const open = mobileMenu.style.display === 'block';
+        mobileMenu.style.display = open ? 'none' : 'block';
+        menuBtn.textContent = open ? '☰' : '✕';
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.style.display = 'none';
+          menuBtn.textContent = '☰';
+        });
+      });
+    }
+
+    document.querySelectorAll('.scroll-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({ behavior:'smooth' });
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold:.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
